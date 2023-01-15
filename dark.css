@@ -1,0 +1,298 @@
+:root {
+  --blurred-btn-bg: var(--bs-gray-dark);
+}
+
+.card, .navbar-primary, .breadcrumb, .modal-content { /* bg-dark class */
+  background-color: var(--bs-gray-dark) !important;
+}
+
+.modal-header, .modal-footer {
+  background-color: rgba(0,0,0,.03);
+}
+.modal-header {
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.modal-footer {
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+
+body {
+  background-color: #222222;
+  color: #fff;
+}
+.list-group-item {
+  background-color: rgba(0,0,0,.15);
+}
+
+.footer, .navbar-secondary {
+  background-color: var(--bs-dark);
+}
+
+a.nohover:hover {
+  color: inherit !important;
+}
+
+.title {
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.profilecircle, .avatar::after, .avatar-bordered img {
+  border-color: var(--bs-gray);
+}
+
+.alternatebg:nth-child(even) {
+  background-color: #1D1D1D;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #676767;
+}
+
+::-webkit-scrollbar
+{
+	background-color: #676767;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #242424;
+}
+
+/* link overrides */
+a, a.nav-link {
+  color: var(--bs-white);
+}
+a:hover, a.nav-link:hover {
+  color: var(--bs-gray);
+}
+label a {
+  color: var(--bs-gray);
+}
+.table-custom td a {
+  color: var(--bs-white);
+}
+
+/* form overrides */
+.form-control, .form-select {
+  color: #fff;
+  background-color: #212529;
+  border: 1px solid #212529;
+}
+.form-control:focus, .form-select:focus {
+  background-color: #e9ecef;
+  color: #212529;
+}
+.form-control:disabled, .form-control[readonly], .form-select:disabled, .form-select[readonly] {
+  background-color: #212529;
+}
+.input-group-text {
+  color: #fff;
+  background-color: #212529;
+  border-color: var(--bs-gray);
+}
+.border-dark {
+  border-color: var(--bs-gray) !important;
+}
+
+/* pagination overrides */
+.page-link {
+  color: var(--bs-gray);
+  background-color: #212529;
+  border: 1px solid #32383e;
+}
+.page-item.active .page-link {
+  background-color: var(--bs-gray-dark);
+  border-color: var(--bs-gray-dark);
+}
+.page-item.disabled .page-link {
+  color: var(--bs-gray-dark);
+  background-color: #212529;
+  border: 1px solid #32383e;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: var(--bs-gray-dark);
+}
+.card-body .nav-pills .nav-link.active, .card-body .nav-pills .show>.nav-link {
+  background-color: #222222;
+}
+
+.btn-outline-custom, .navbar-toggler-custom, nav .btn-outline-custom {
+  color: var(--bs-gray);
+  border-color: var(--bs-gray);
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  background-image: none;
+}
+
+.btn-outline-custom.active, .btn-outline-custom:active {
+  color: var(--bs-white);
+  background-color: var(--bs-gray-dark);
+  border-color: var(--bs-gray);
+}
+
+.btn-outline-custom:hover {
+  color: var(--bs-white);
+  background-color: var(--bs-gray);
+  border-color: var(--bs-gray);
+}
+
+.btn.btn-tertiary {
+  color: var(--bs-gray);
+}
+
+.border-custom > input, .border-custom > select, input.border-custom, select.border-custom {
+  border-color: var(--bs-gray) !important;
+}
+
+.progress {
+  background-color: #212529;
+}
+.progress-bar.bg-custom {
+  background-color: var(--bs-gray);
+}
+
+.table-custom,
+.table-custom > th,
+.table-custom > td {
+  background-color: #c6c8ca;
+}
+
+.table-hover .table-custom:hover {
+  background-color: #b9bbbe;
+}
+
+.table-hover .table-custom:hover > td,
+.table-hover .table-custom:hover > th {
+  background-color: #b9bbbe;
+}
+
+.table-custom, .table-striped > tbody > tr:nth-of-type(odd) {
+  color: var(--bs-white);
+  background-color: #212529;
+}
+
+.table-custom th,
+.table-custom td,
+.table-custom thead th {
+  border-color: #32383e;
+}
+
+.table-custom.table-bordered {
+  border: 0;
+}
+
+.table-custom.table-bordered > :not(caption) > * > * {
+  border-width: 1px;
+}
+
+.table-custom.table-bordered > :not(:last-child) > :last-child > * {
+  border-bottom: none;
+}
+
+.table-custom.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table-custom.table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+#nprogress .bar {
+  background: #676767;
+  height: 5px;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px #676767, 0 0 5px #676767;
+}
+
+.ql-snow {
+  border: none !important;
+}
+
+.ql-formats, .ql-editor, .ql-toolbar, .ql-picker-options {
+  background-color: #333 !important;
+  color: #fff;
+}
+
+.ql-snow .ql-tooltip {
+  background-color: #333;
+  border: 1px solid #222222;
+  box-shadow: none;
+  color: #fff;
+}
+
+.ql-stroke {
+  stroke: #fff !important;
+}
+.ql-fill {
+  fill: #fff !important;
+}
+.ql-toolbar button.ql-active .ql-stroke {
+  stroke: #777 !important;
+}
+.ql-picker-item.ql-selected, .ql-snow.ql-toolbar .ql-picker-item:hover {
+  color: #777 !important;
+}
+
+.ql-picker-label, .ql-picker {
+  color: #fff !important;
+}
+
+.ql-snow a {
+  color: #c4c4c4;
+}
+
+.ql-mention-list-container {
+  background-color: #333 !important;
+  border: 1px solid #222222 !important;
+}
+
+.ql-mention-list-item.selected {
+  background-color: #343A40 !important;
+}
+
+.swal2-popup {
+  background: var(--bs-gray-dark) !important;
+  border: 1px solid rgba(0,0,0,.125) !important;
+}
+
+.swal2-popup .swal2-html-container, .swal2-popup .swal2-title, .swal2-cancel {
+  color: #fff !important;
+}
+
+:not(.swal2-loading) > .swal2-styled:not(.swal2-cancel):not(.swal2-confirm) {
+  background-color: var(--bs-gray-dark) !important;
+  border: 1px solid var(--bs-gray) !important;
+}
+
+:not(.swal2-loading) > .swal2-styled:not(.swal2-cancel):not(.swal2-confirm):hover {
+  background-color: var(--bs-gray) !important;
+}
+
+.swal2-loading .swal2-loader {
+  border-top-color: #fff !important;
+  border-bottom-color: #fff !important;
+}
+
+.swal2-popup .swal2-input, .swal2-popup .swal2-select {
+  background: revert !important;
+  border-color: #212529 !important;
+}
+
+.page-header {
+  background-color: #1D1D1D;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+hr {
+  background-color: #000;
+}
